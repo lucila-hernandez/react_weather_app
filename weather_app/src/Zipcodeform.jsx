@@ -1,6 +1,6 @@
 function ZipCodeForm({ zipCode, setZipCode }) {
     const inputChange = (e) => {
-        setZipCode(e.target.value); 
+        setZipCode(e.target.value);
     };
 
     return (
@@ -9,8 +9,11 @@ function ZipCodeForm({ zipCode, setZipCode }) {
             <input
                 id="zipCode"
                 type="text"
-                value={zipCode}  
-                onChange={inputChange}  
+                value={zipCode}
+                onChange={inputChange}
+                pattern="\d{5}" 
+                maxLength={"5"}
+                required
             />
         </form>
     );
