@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import DisplayWeather from './Displayweather';
 
 function Weatherfetch({ zipCode, unit }) {
   const [weatherData, setWeatherData] = useState(null);
