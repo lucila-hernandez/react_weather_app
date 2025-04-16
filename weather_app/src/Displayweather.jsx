@@ -8,7 +8,6 @@ function DisplayWeather({ weatherData, error }) {
       <div>
         <h2>Weather in {weatherData.name}</h2>
         <p>Temperature: {weatherData.main.temp}°</p>
-        <p>Weather: {weatherData.weather[0].description}</p>
       </div>
     );
   }
